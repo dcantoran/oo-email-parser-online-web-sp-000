@@ -9,7 +9,7 @@ class EmailAddressParser
   
   def parse 
     @email_str.split(/[,\s]/).uniq.delete_if{|ele| ele == ""}
-      binding.pry
+      # binding.pry
   end 
   
 end 
