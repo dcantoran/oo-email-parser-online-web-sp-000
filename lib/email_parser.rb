@@ -8,8 +8,9 @@ class EmailAddressParser
   end 
   
   def parse 
-    @email_str.split(/[,\s]/).uniq.delete_if{|ele| ele == ""}
-      # binding.pry
+    # @email_str.split(/[,\s]/).uniq.delete_if{|ele| ele == ""}
+    # or 
+    @email_str.split(/, | /).uniq
   end 
   
 end 
