@@ -8,7 +8,8 @@ class EmailAddressParser
   end 
   
   def parse 
-    
+    @email_str.split
+    binding.pry
   end 
   
 end 
