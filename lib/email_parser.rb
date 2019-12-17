@@ -8,11 +8,7 @@ class EmailAddressParser
   end 
   
   def parse 
-    if @email_str.include?(",")
-      @email_str.split(", ").uniq
-    elsif @email_str.include?(" ")
-      @email_str.split(" ").uniq
-    end
+    email_str.split(",")
       
   end 
   
