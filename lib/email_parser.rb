@@ -2,9 +2,13 @@
 # unique email addresses. The delimiters to support are commas (',') or whitespace (' ').
 require 'pry'
 class EmailAddressParser 
-  
+  attr_writer :email
   def initialize(email_str)
-    
+    @email_str = email_str
+  end 
+  
+  def parse 
+    puts @email
   end 
   
 end 
