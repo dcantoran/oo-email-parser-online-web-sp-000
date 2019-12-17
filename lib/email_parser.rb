@@ -11,5 +11,4 @@ class EmailAddressParser
     puts @email
     binding.pry
   end 
-  
 end 
