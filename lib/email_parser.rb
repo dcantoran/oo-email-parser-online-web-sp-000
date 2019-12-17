@@ -12,5 +12,6 @@ class EmailAddressParser
       @email_str.split(" ").uniq 
     elsif @email.include?(",")
       @email_str.split(", ").uniq
+    end 
   end 
 end 
