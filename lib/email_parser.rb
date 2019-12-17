@@ -8,7 +8,7 @@ class EmailAddressParser
   end 
   
   def parse 
-    @email_str.split(", ").
-    binding.pry
+    @email_str.split(", ").uniq
+    # binding.pry
   end 
 end 
