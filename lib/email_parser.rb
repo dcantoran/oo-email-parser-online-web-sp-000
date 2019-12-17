@@ -8,8 +8,8 @@ class EmailAddressParser
   end 
   
   def parse 
-    @email_str.split.scan(/[,\s]/).uniq
-      
+    @email_str.scan(/[,\s]/).uniq
+      binding.pry
   end 
   
 end 
